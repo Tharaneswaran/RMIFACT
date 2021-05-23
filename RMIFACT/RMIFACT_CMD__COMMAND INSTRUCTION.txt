@@ -1,0 +1,41 @@
+cmd window 1
+---------------------------------------------------------
+D:\JAVA IDLE\RMIFACT>javac FactInterface.java
+
+D:\JAVA IDLE\RMIFACT>javac FactImpl.java
+
+D:\JAVA IDLE\RMIFACT>javac server.java
+
+D:\JAVA IDLE\RMIFACT>rmic FactImpl
+Warning: generation and use of skeletons and static stubs for JRMP
+is deprecated. Skeletons are unnecessary, and static stubs have
+been superseded by dynamically generated stubs. Users are
+encouraged to migrate away from using rmic to generate skeletons and static
+stubs. See the documentation for java.rmi.server.UnicastRemoteObject.
+
+D:\JAVA IDLE\RMIFACT>start rmiregistry
+------------------------------------------------------------------------------------
+cmd Window 2 opens once the above command is typed ---- window name : rmiregistry.exe
+And type the below code in window 1 back again
+--------------------------------------------------------------------------------------
+D:\JAVA IDLE\RMIFACT>java server
+System is Ready!!!
+
+------------------------------------------------------------------------------------------
+Open cmd window 3 without closing the other windows on same location and type the below command
+------------------------------------------------------------------------------------------
+Microsoft Windows [Version 10.0.19042.985]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\JAVA IDLE\RMIFACT>javac ClientFactRMI.java
+Note: ClientFactRMI.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+D:\JAVA IDLE\RMIFACT>java ClientFactRMI localhost
+Enter the number to find the factorial :
+5
+the factorial of the given number is :120
+
+D:\JAVA IDLE\RMIFACT>
+
+----------------------------------------------------------------------------------------------
